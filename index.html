@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emirates Airlines</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,6 +19,42 @@
             <button class="btn">Book Online</button>
         </div>
     </header>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="booking-container">
+            <div class="booking-options">
+                <input type="radio" id="roundtrip" name="trip" checked>
+                <label for="roundtrip">Round trip</label>
+                <input type="radio" id="oneway" name="trip">
+                <label for="oneway">One way</label>
+                <input type="radio" id="multicity" name="trip">
+                <label for="multicity">Multi-city</label>
+            </div>
+
+            <div class="input-container">
+                <div class="input-box">
+                    <label for="departure">From</label>
+                    <input type="text" id="departure" placeholder="Departure">
+                </div>
+                <div class="input-box">
+                    <label for="destination">To</label>
+                    <input type="text" id="destination" placeholder="Destination">
+                </div>
+                <div class="input-box">
+                    <label for="dates">Dates</label>
+                    <input type="date" id="dates" placeholder="Dates">
+                </div>
+                <div class="input-box">
+                    <label for="passengers">Passengers</label>
+                    <input type="text" id="passengers" value="1 Passenger ECO" readonly>
+                </div>
+            </div>
+
+            <!-- The button now links to a URL -->
+            <a href="https://www.roblox.com/games/125757968444921/Flights-Calendar" class="search-btn">Search Flights</a> <!-- Replace with actual URL -->
+        </div>
+    </section>
 
     <!-- About Section -->
     <section class="about">
@@ -41,24 +78,28 @@
         </div>
     </section>
 
-    <!-- Social Media Section -->
-    <section class="social-media">
-        <h2>Follow Us</h2>
-        <div class="social-icons">
-            <a href="https://www.youtube.com/@EmiratesAirlines-uk4pt" target="_blank"><img src="images/youtube.png" alt="YouTube"></a>
-            <a href="https://www.tiktok.com/@emiratesairlinesblox" target="_blank"><img src="images/tiktok.png" alt="TikTok"></a>
-            <a href="https://discord.com" target="_blank"><img src="images/discord.png" alt="Discord"></a>
-        </div>
-    </section>
-
     <!-- Footer Section -->
     <footer>
         <div class="footer-content">
             <img src="images/airplane.png" alt="Airplane">
             <p>Try the best airline experience with Emirates Airlines</p>
         </div>
-        <p>&copy; 2024 Emirates Airlines. All Rights Reserved.</p>
     </footer>
+
+    <!-- Follow Us Section (moved to the bottom) -->
+    <section class="social-media">
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+            <a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube"></a>
+            <a href="https://www.tiktok.com" target="_blank"><img src="images/tiktok.png" alt="TikTok"></a>
+            <a href="https://discord.com" target="_blank"><img src="images/discord.png" alt="Discord"></a>
+        </div>
+    </section>
+
+    <!-- Copyright Section (as the last element) -->
+    <section class="copyright">
+        <p>&copy; 2024 Emirates Airlines. All Rights Reserved.</p>
+    </section>
 
     <script src="script.js"></script>
 </body>
