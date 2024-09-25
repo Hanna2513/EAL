@@ -1,22 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff4747;
 }
 
-/* Image Section */
+/* Header Section */
 .image-container img {
     width: 100%;
     height: 80vh;
     object-fit: cover;
 }
 
-/* CTA Section */
 .cta {
     position: absolute;
     top: 50%;
@@ -38,7 +35,7 @@ body {
 }
 
 .btn {
-    background-color: #FF5722;
+    background-color: #fd3232;
     color: white;
     padding: 15px 30px;
     font-size: 1rem;
@@ -49,15 +46,84 @@ body {
 }
 
 .btn:hover {
-    background-color: #ff784e;
+    background-color: #ff4e4e;
     transform: scale(1.05);
+}
+
+/* Booking Section */
+.booking-section {
+    margin: 50px auto;
+    padding: 50px;
+    max-width: 500px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.booking-options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.booking-options label {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.input-box label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input-box input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search-btn {
+    display: inline-block;
+    text-align: center;
+    background-color: #ff3e41;
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.search-btn:hover {
+    background-color: #ff5f5f;
 }
 
 /* About Section */
 .about {
     padding: 50px;
-    background-color: #d32f2f;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
@@ -96,13 +162,13 @@ body {
 
 .about-item p {
     margin-top: 10px;
-    color: #fff;
+    color: #000000;
 }
 
 /* Social Media Section */
 .social-media {
     padding: 40px;
-    background-color: #333;
+    background-color: #212121;
     text-align: center;
 }
 
@@ -142,15 +208,37 @@ footer {
     margin-bottom: 20px;
 }
 
+/* Footer Section */
+footer {
+    background-color: #212121;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 .footer-content img {
-    width: 200px;
+    width: 600px;  /* Increased width for the airplane image */
     margin-right: 20px;
+    border-radius: 20px; /* Keeps rounded corners */
 }
 
 .footer-content p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-footer p {
-    margin: 10px 0;
+/* Copyright Section */
+.copyright {
+    background-color: #212121; /* You can change this color if needed */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
 }
