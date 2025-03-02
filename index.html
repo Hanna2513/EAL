@@ -3,104 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emirates Airlines</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Emirates - Fly Better</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="image-container">
-            <img src="images/image1.jpg" alt="Emirates Airlines">
-        </div>
-        <div class="cta">
-           
-            <p>Fly Better</p>
-            <button class="btn">Book Online</button>
-        </div>
-    </header>
-
-    <!-- Booking Section -->
-    <section class="booking-section">
-        <div class="booking-container">
-            <div class="booking-options">
-                <input type="radio" id="roundtrip" name="trip" checked>
-                <label for="roundtrip">Round trip</label>
-                <input type="radio" id="oneway" name="trip">
-                <label for="oneway">One way</label>
-                <input type="radio" id="multicity" name="trip">
-                <label for="multicity">Multi-city</label>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Emirates Logo">
             </div>
-
-            <div class="input-container">
-                <div class="input-box">
-                    <label for="departure">From</label>
-                    <input type="text" id="departure" placeholder="Departure">
-                </div>
-                <div class="input-box">
-                    <label for="destination">To</label>
-                    <input type="text" id="destination" placeholder="Destination">
-                </div>
-                <div class="input-box">
-                    <label for="dates">Dates</label>
-                    <input type="date" id="dates" placeholder="Dates">
-                </div>
-                <div class="input-box">
-                    <label for="passengers">Passengers</label>
-                    <input type="text" id="passengers" value="1 Passenger ECO" readonly>
-                </div>
+            <div class="nav-links">
+                <a href="#">BOOK</a>
+                <a href="#">MANAGE</a>
+                <a href="#">EXPERIENCE</a>
+                <a href="#">WHERE WE FLY</a>
+                <a href="#">LOYALTY</a>
+                <a href="#">HELP</a>
             </div>
+            <div class="social-links">
+                <a href="#" aria-label="Discord"><i data-lucide="message-circle"></i></a>
+                <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                <a href="#" aria-label="Roblox"><i data-lucide="gamepad"></i></a>
+                <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+            </div>
+        </div>
+    </nav>
 
-            <!-- The button now links to a URL -->
-            <a href="https://www.roblox.com/games/125757968444921/Flights-Calendar" class="search-btn">Search Flights</a> <!-- Replace with actual URL -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Fly to Dubai and get</h1>
+            <h2 class="hero-subtitle">FREE TICKETS</h2>
+            <p class="hero-description">to top attractions</p>
+            <button class="book-btn" onclick="window.location.href='https://www.roblox.com/games/125757968444921/Flights-Calendar';">Book now</button>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about">
-        <h2>About Us</h2>
-        <div class="about-container">
-            <div class="about-item">
-                <img src="images/image4.jpg" alt="Fly Better">
-                <h3>Fly Better</h3>
-                <p>Discover the world with Emirates Airlines</p>
+    <section class="search-section">
+        <div class="search-container">
+            <div class="search-tabs">
+                <button class="tab active">
+                    <i data-lucide="plane"></i>
+                    Flight
+                </button>
+                <button class="tab">
+                    <i data-lucide="hotel"></i>
+                    Flight + Hotel
+                </button>
             </div>
-            <div class="about-item">
-                <img src="images/image5.jpg" alt="Hiring">
-                <h3>Hiring</h3>
-                <p>We are Hiring. Join our Discord server and apply for a job</p>
+
+            <form class="search-form">
+                <div class="form-group">
+                    <label class="form-label">Departure Airport</label>
+                    <i data-lucide="map-pin" class="form-icon"></i>
+                    <input type="text" class="form-input" placeholder="Enter city or airport">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Arrival Airport</label>
+                    <i data-lucide="map-pin" class="form-icon"></i>
+                    <input type="text" class="form-input" placeholder="Enter city or airport">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Travel Dates</label>
+                    <i data-lucide="calendar" class="form-icon"></i>
+                    <input type="date" class="form-input" placeholder="Select dates">
+                </div>
+            </form>
+
+            <button class="book-btn search-btn" onclick="window.location.href='https://www.roblox.com/games/125757968444921/Flights-Calendar';">
+                Search Flights
+                <i data-lucide="search"></i>
+            </button>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="services-grid">
+            <div class="service-item">
+                <i data-lucide="car" class="w-12 h-12"></i>
+                <h3 class="service-title">Car rentals</h3>
             </div>
-            <div class="about-item">
-                <img src="images/image6.jpg" alt="High-Quality Flights">
-                <h3>High-Quality Flights</h3>
-                <p>An airport with an awesome view and flight experience</p>
+            <div class="service-item">
+                <i data-lucide="map-pin" class="w-12 h-12"></i>
+                <h3 class="service-title">Tours & activities</h3>
+            </div>
+            <div class="service-item">
+                <i data-lucide="users" class="w-12 h-12"></i>
+                <h3 class="service-title">Book a holiday</h3>
+            </div>
+            <div class="service-item">
+                <i data-lucide="clock" class="w-12 h-12"></i>
+                <h3 class="service-title">Airport transfers</h3>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-content">
-            <img src="images/airplane1.png" alt="Airplane">
-            <p>Try the best airline experience with Emirates Airlines</p>
-        </div>
-    </footer>
-
-    <!-- Follow Us Section (moved to the bottom) -->
-    <section class="social-media">
-        <h2>Follow Us</h2>
-        <div class="social-icons">
-            <a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube"></a>
-            <a href="https://www.tiktok.com" target="_blank"><img src="images/tiktok.png" alt="TikTok"></a>
-            <a href="https://discord.com" target="_blank"><img src="images/discord.png" alt="Discord"></a>
+    <section class="loyalty-banner">
+        <div class="loyalty-container">
+            <div class="loyalty-content">
+                <h3 class="loyalty-title">Join Emirates Skywards</h3>
+                <p class="loyalty-description">Earn miles with our loyalty program and enjoy exclusive benefits</p>
+            </div>
+            <button class="book-btn">Join now</button>
         </div>
     </section>
 
-    <!-- Copyright Section (as the last element) -->
-    <section class="copyright">
-        <p>&copy; 2024 Emirates Airlines. All Rights Reserved.</p>
-    </section>
-
-    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
 </body>
 </html>
